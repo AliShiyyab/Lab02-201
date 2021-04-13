@@ -1,0 +1,23 @@
+body {
+    background-color: cadetblue;
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: gray;
+}
+.About_me {
+    font-style: italic;
+    text-align: center;
+    background-color: gray;
+    margin: 0%;
+}
+#Submited{
+    align-items: flex-start;
+    background-color: gray;
+}
+#Skillss{
+    background-color: white;
+}
+
