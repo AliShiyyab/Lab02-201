@@ -41,12 +41,6 @@ if (TA_Name.toLowerCase == 'yes'){
     num+=1;
 }
 
-if (num >= 6){
-    alert("Welcome " + namee + " You are Passing and git " + num + " of 7 \n Good Luck in my page.")
-}
-else{
-    alert("I'm sad, You are fail in my exam and you don't me good.")
-}
 
 function addSkills(){
     let numberOfSkills = prompt('Please Enter The Number Of Skills')
