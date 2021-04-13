@@ -7,17 +7,34 @@ h1 {
     color: black;
     background-color: gray;
 }
-.About_me {
+
+#Submited{
+    align-items: flex-start;
+    background-color: gray;
+    font-style: oblique;
+    font-feature-settings: "cpsp";
+}
+#Skillss{
+    background-color: white;
+    padding-left: 5%;
+}
+
+.Footers{
+    border: 2px dashed black;
+    background-color: yellow;
+    font-size: x-small;
+  }
+
+.Last{
+    border: 2px solid red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#DIVISION{
+    border: 2px dashed black;
     font-style: italic;
     text-align: center;
     background-color: gray;
     margin: 0%;
+    font-size: 30px;
 }
-#Submited{
-    align-items: flex-start;
-    background-color: gray;
-}
-#Skillss{
-    background-color: white;
-}
-
