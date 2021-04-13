@@ -8,6 +8,45 @@ else
 {
     alert("Hi " + namee + ",Not Welcome in my Page You are Not my TA :)");
 }
+alert("Welcome " + namee + "In my web site \n if you know me you can answering my question \n"+
+    "If you pass and get over than 80%, \n I git you a bik awewsome massege")
+
+var num = 0;
+let Age = prompt("My age is 30?");
+let Uni = prompt("My uni is Yarmouk?");
+let From = prompt("Am I Jordanian?");
+let B_A = prompt("I graduated from YU uni, specially CIS?");
+let familly = prompt("My familly name is Shiyyab ?");
+let graduated_year = prompt("i graduated since 2010 ?");
+let TA_Name = prompt("TA name Hadeel ?");
+if (Age.toLowerCase() == 'no'){
+    num+=1;
+}
+if (Uni.toLowerCase() == 'yes'){
+    num+=1;
+}
+if (From.toLowerCase == 'yes'){
+    num+=1;
+}
+if (B_A.toLowerCase == 'yes'){
+    num+=1;
+}
+if (familly.toLowerCase == 'yes'){
+    num+=1;
+}
+if (graduated_year.toLowerCase == 'no'){
+    num+=1;
+}
+if (TA_Name.toLowerCase == 'yes'){
+    num+=1;
+}
+
+if (num >= 6){
+    alert("Welcome " + namee + " You are Passing and git " + num + " of 7 \n Good Luck in my page.")
+}
+else{
+    alert("I'm sad, You are fail in my exam and you don't me good.")
+}
 
 function addSkills(){
     let numberOfSkills = prompt('Please Enter The Number Of Skills')
