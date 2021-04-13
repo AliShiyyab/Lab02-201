@@ -1,3 +1,4 @@
+"use strict";
 let namee = prompt("Hello, What's your name to git you a most welcoming : ")
 if (namee.toLowerCase() == 'hadeel' || namee.toUpperCase() == 'HADEEL')
 {
@@ -31,6 +32,6 @@ function addSkills(){
         }
     }
     document.getElementById("Skillss").innerHTML = AllSkill;
-    
+    return AllSkill;
 }
 
