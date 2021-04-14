@@ -11,18 +11,18 @@ else
 alert("Welcome " + namee + " In my web site \nif you know me you can answering my question \n"+
     "If you pass and get over than 80%, \nI git you a bik awewsome massege")
 
-let Age = prompt("My age is ?");
-let Uni = prompt("My uni is ?");
-let From = prompt("Where Am I from ?");
-let B_A = prompt("I graduated from YU uni, specially what ?");
+let Age = prompt("My age is 23 ?");
+let Uni = prompt("My uni is yarmouk ?");
+let From = prompt(" Am I from jerash?");
+let B_A = prompt("I graduated from YU uni, specially what civil?");
 let familly = prompt("My familly name is  ?");
 let graduated_year = prompt("i graduated since  ?");
 let TA_Name = prompt("TA name  ?");
 var count = 0;
-if (Age === '23'){count +=1;}
-if (Uni.toLowerCase() === 'yarmouk'){count += 1;}
-if (From.toLowerCase() == 'irbid'){count += 1;}
-if (B_A.toLowerCase() == 'cis'){count += 1;}
+if (Age.toLowerCase() === 'yes'){count +=1;}
+if (Uni.toLowerCase() === 'yes'){count += 1;}
+if (From.toLowerCase() == 'no'){count += 1;}
+if (B_A.toLowerCase() == 'no'){count += 1;}
 if (familly.toUpperCase() == 'SHIYYAB'){count += 1;}
 if (graduated_year == '2020'){count += 1;}
 if (TA_Name.toLowerCase() == 'hadeel'){count += 1;}
@@ -51,7 +51,7 @@ function inteligant(){
             break;
         }
         else{
-            continue;
+            alert("False ! \nRepeated please " + namee );
         }
     }
 }
