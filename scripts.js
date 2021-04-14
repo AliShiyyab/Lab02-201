@@ -30,7 +30,7 @@ alert("Mark = " + count + " of 7");
 
 let BDate = prompt("I need to ask you a hard question\nthe month of my birthday is:");
 var n = 4 , counter = 1;
-while (n == 0){
+while (n > 0){
     if (BDate == '2'){
         alert("Yes correct with " + counter + " Steps");
         break;
@@ -38,6 +38,9 @@ while (n == 0){
     n-=1;
     let retry = prompt("Retry enter number ")
     counter +=1;
+    if (n==0){
+        alert ('The correct answer is 2');
+    }
 }
 
 function inteligant(){
