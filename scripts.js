@@ -15,31 +15,38 @@ let Age = prompt("My age is 23 ?");
 let Uni = prompt("My uni is yarmouk ?");
 let From = prompt(" Am I from jerash?");
 let B_A = prompt("I graduated from YU uni, specially what civil?");
-let familly = prompt("My familly name is  ?");
-let graduated_year = prompt("i graduated since  ?");
-let TA_Name = prompt("TA name  ?");
+let familly = prompt("My familly name is Ajarmeh ?");
+let graduated_year = prompt("i graduated since 2020 ?");
+let TA_Name = prompt("TA name is Ali ?");
 var count = 0;
-if (Age.toLowerCase() === 'yes'){count +=1;}
-if (Uni.toLowerCase() === 'yes'){count += 1;}
-if (From.toLowerCase() == 'no'){count += 1;}
-if (B_A.toLowerCase() == 'no'){count += 1;}
-if (familly.toUpperCase() == 'SHIYYAB'){count += 1;}
-if (graduated_year == '2020'){count += 1;}
-if (TA_Name.toLowerCase() == 'hadeel'){count += 1;}
+if (Age.toLowerCase() === 'y'){count +=1;}
+if (Uni.toLowerCase() === 'y'){count += 1;}
+if (From.toLowerCase() == 'n'){count += 1;}
+if (B_A.toLowerCase() == 'n'){count += 1;}
+if (familly.toUpperCase() == 'n'){count += 1;}
+if (graduated_year == 'y'){count += 1;}
+if (TA_Name.toLowerCase() == 'n'){count += 1;}
 alert("Mark = " + count + " of 7");
 
-let BDate = prompt("I need to ask you a hard question\nthe month of my birthday is:");
-var n = 4 , counter = 1;
-while (n > 0){
-    if (BDate == '2'){
-        alert("Yes correct with " + counter + " Steps");
+
+
+for(var i = 0 ; i < 4 ; i++){
+    let entered = prompt("How many TA we have in the lesson?");
+    if (entered == '8'){
+        alert("Yes, They are :"+
+        "\nAhmad Al-Mohammad"
+        +"\nHadi Aji"
+        +"\nHadeel"
+        +"\nAbdulAzziz"
+        +"\nSaja"
+        +"\nLaith"
+        +"\nMontaser"
+        +"\nRana AbuSamhan"
+        +"\nYou have : " + i+1 + " Steps" );
         break;
     }
-    n-=1;
-    let retry = prompt("Retry enter number ")
-    counter +=1;
-    if (n==0){
-        alert ('The correct answer is 2');
+    else{
+        continue;
     }
 }
 
