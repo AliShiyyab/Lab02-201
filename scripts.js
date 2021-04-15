@@ -33,6 +33,7 @@ alert("Mark = " + count + " of 7");
 for(var i = 0 ; i < 4 ; i++){
     let entered = prompt("How many TA we have in the lesson?");
     if (entered == '8'){
+        let ii = i + 1; 
         alert("Yes, They are :"+
         "\nAhmad Al-Mohammad"
         +"\nHadi Aji"
@@ -42,7 +43,7 @@ for(var i = 0 ; i < 4 ; i++){
         +"\nLaith"
         +"\nMontaser"
         +"\nRana AbuSamhan"
-        +"\nYou have : " + i+1 + " Steps" );
+        +"\nYou have : " + ii + " Steps" );
         break;
     }
     else{
