@@ -29,10 +29,10 @@ if (TA_Name.toLowerCase() == 'n'){count += 1;}
 alert("Mark = " + count + " of 7");
 
 
-
+let entered = prompt("How many TA we have in the lesson?");
 for(var i = 0 ; i < 4 ; i++){
-    let entered = prompt("How many TA we have in the lesson?");
-    if (entered == '8'){
+
+    if (entered == '8' && i != 3){
         let ii = i + 1; 
         alert("Yes, They are :"+
         "\nAhmad Al-Mohammad"
@@ -46,8 +46,17 @@ for(var i = 0 ; i < 4 ; i++){
         +"\nYou have : " + ii + " Steps" );
         break;
     }
-    else{
+    else if(entered > 8 && i != 3){
+        entered = prompt("you input up number, Please try again.");
         continue;
+    }
+    else if (entered < 8 && i != 3){
+        entered = prompt("you input to low number, Please try again.");
+        continue;
+    }
+    else {
+        alert("No attempts is corercr,\nThe Correct value equal 8.");
+        break;
     }
 }
 
@@ -61,11 +70,15 @@ function inteligant(){
             alert("Coreect answer " + namee + " !");
             break;
         }
-        else{
+        else if (trying.toLowerCase() != 'fire' && i < 5 ){
             alert("False ! \nRepeated please " + namee );
+        }
+        else{
+            alert("You lose 6 attempts,\nThe correct answer is fire");
         }
     }
 }
+inteligant();
 
 function addSkills(){
     let numberOfSkills = prompt('Please Enter The Number Of Skills')
